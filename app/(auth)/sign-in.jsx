@@ -12,16 +12,16 @@ const SignIn = () => {
   })
   const [isSubmitting, setIsSubmitting] = useState(false);
   const submit = () => {
-    // if (form.email === 'vee@gmail.com' && form.password === '12345') router.push('/home')
+     if (form.email === 'vee@gmail.com' && form.password === '12345') router.push('/home')
 
   }
   return (
     <SafeAreaView className="bg-primary h-full">
       <ScrollView>
         <View className="w-full justify-center min-h-[85vh] px-4 my-6">
-          <Image source={images.logo} className="w-[115px] h-[35px]" resizeMode='contain' />
+          <Image source={images.logo} className="w-[150px]" resizeMode='contain' />
 
-          <Text className="text-2xl text-white text-semibold mt-10 font-psemibold">Log In to Aora</Text>
+          <Text className="text-2xl text-white text-semibold mt-10 font-psemibold">Log In to HappyMe</Text>
           <FormField title="Email"
             value={form.email}
             handleChangeText={(e) => setForm({ ...form, email: e })}

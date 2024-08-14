@@ -32,9 +32,9 @@ const SignUp = () => {
     <SafeAreaView className="bg-primary h-full">
       <ScrollView>
         <View className="w-full justify-center min-h-[85vh] px-4 my-6">
-          <Image source={images.logo} className="w-[115px] h-[35px]" resizeMode='contain' />
+          <Image source={images.logo} className="w-[130px] " resizeMode='contain' />
 
-          <Text className="text-2xl text-white text-semibold mt-10 font-psemibold">Sign up to Aora</Text>
+          <Text className="text-2xl text-white text-semibold mt-10 font-psemibold">Sign up to HappyMe</Text>
           <FormField title="Username"
             value={form.username}
             handleChangeText={(e) => setForm({ ...form, username: e })}
