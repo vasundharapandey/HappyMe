@@ -38,9 +38,9 @@ const TabLayout = () => {
           tabBarInactiveTintColor: "#CDCDE0",
           tabBarShowLabel: false,
           tabBarStyle: {
-            backgroundColor: "#161622",
+            backgroundColor: "#fff",
             borderTopWidth: 1,
-            borderTopColor: "#232533",
+            // borderTopColor: "#232533",
             height: 84,
           },
         }}
@@ -61,15 +61,15 @@ const TabLayout = () => {
           }}
         />
         <Tabs.Screen
-          name="bookmark"
+          name="favorites"
           options={{
-            title: "Bookmark",
+            title: "Favorites",
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
                 icon={icons.bookmark}
                 color={color}
-                name="Bookmark"
+                name="Favorites"
                 focused={focused}
               />
             ),
